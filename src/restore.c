@@ -1399,9 +1399,9 @@ int restore_send_baseband_data(restored_client_t restore, struct idevicerestore_
 	plist_t response = NULL;
 	char* buffer = NULL;
 	char* bbfwtmp = NULL;
-	plist_t dict = NULL;
+	plist_t dict = NULL; /*
 
-	/* if (client->flags & FLAG_DOWNGRADE) {
+	if (client->flags & FLAG_DOWNGRADE) {
 		plist_t dict = plist_new_dict();
 		restored_error_t restore_error = restored_send(restore, dict);
 		plist_free(dict);
